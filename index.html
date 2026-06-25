@@ -1,442 +1,677 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Kesav Kumar · Associate Technical Consultant</title>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
-<link rel="stylesheet" href="style.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kesav Kumar · Associate Technical Consultant</title>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<nav>
-  <a href="#home" class="nav-logo">
-    <img src="uploads/KesavKumarJ_Image.jpg" alt="Logo" class="nav-logo-img">
+<!-- ── NAVIGATION ── -->
+<nav class="navbar">
+  <a href="#" class="nav-logo">
+    <img src="uploads/KesavKumarJ_Image.jpg" alt="KJ" class="nav-logo-img">
     <span class="nav-logo-text">Kesav Kumar J</span>
   </a>
   <ul class="nav-links">
-    <li><a href="#about">About</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#internships">Internships</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li><a href="#about-tab" class="nav-link active" data-tab="about">About</a></li>
+    <li><a href="#projects-tab" class="nav-link" data-tab="projects">Projects</a></li>
+    <li><a href="#contact-tab" class="nav-link" data-tab="contact">Contact</a></li>
+    <li><a href="#perficient-tab" class="nav-link" data-tab="perficient">Perficient</a></li>
   </ul>
 </nav>
 
-<section class="hero" id="home">
-  <div class="hero-bg-text">KJ</div>
-  <div class="hero-content wrap">
-    <div class="hero-inner">
-      <div class="hero-role">Associate Technical Consultant · Perficient</div>
-      <h1>Kesav Kumar<br/><em>Jothichandran</em></h1>
-      <p class="hero-sub">
-        B.Tech IT graduate from Anna University CEG  — passionate about building scalable systems across data and AI.
-      </p>
-      <div class="hero-actions">
-        <a href="#projects" class="btn btn-blue">View My Projects ↓</a>
-        <a href="#contact" class="btn btn-ghost">Get In Touch</a>
-      </div>
-    </div>
-    <div class="hero-image">
-      <img src="uploads/KesavKumarJ_Image.jpg" alt="Kesav Kumar Image Placeholder">
-    </div>
-  </div>
-  <div class="scroll-hint">Scroll to explore</div>
-</section>
+<!-- ── TAB CONTAINER ── -->
+<div class="tabs-container">
 
-<section id="about">
-  <div class="wrap">
-    <div class="s-label">Who I am</div>
-    <h2 class="s-title">About <span>Me</span></h2>
-    <div class="about-grid">
-      <div class="about-bio">
-        <p>I'm a <strong>B.Tech Information Technology graduate</strong> from Anna University's College of Engineering Guindy (CGPA: 8.12/10 across 6 semesters), currently an <strong>Associate Technical Consultant in training at Perficient</strong>.</p>
-        <p>My work spans <strong>data systems and AI engineering</strong>. I've interned at Anna University's Distance Education Centre and Aravind Eye Hospital, working on production-grade systems.</p>
-        <p>I'm passionate about building systems that are <strong>scalable and well-engineered</strong> — from AI-powered pipelines and multi-agent frameworks to large-scale databases and analytical platforms.</p>
-      </div>
-      <div class="about-cards">
-        <div class="acard"><div class="num"><span>8.12</span></div><div class="lbl">CGPA (6 Sems)</div></div>
-        <div class="acard"><div class="num"><span>2</span></div><div class="lbl">Internships</div></div>
-        <div class="acard"><div class="num"><span>10</span>+</div><div class="lbl">Projects Built</div></div>
-        <div class="acard"><div class="num"><span>2026</span></div><div class="lbl">Graduate</div></div>
-      </div>
-    </div>
-  </div>
-</section>
+  <!-- ════════════════════════════════════════════════════════ -->
+  <!-- TAB 1: ABOUT ME -->
+  <!-- ════════════════════════════════════════════════════════ -->
+  <div class="tab-content active" id="about-tab">
+    <div class="tab-inner">
 
-<section id="skills">
-  <div class="wrap">
-    <div class="s-label">What I know</div>
-    <h2 class="s-title">Skills &amp; <span>Tools</span></h2>
-    <div class="skills-grid">
-      <div class="sk b">
-        <div class="sk-icon"><svg viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
-        <div class="sk-label">Languages</div>
-        <h3>Python & SQL</h3>
-        <p>Core languages for data engineering — scripting pipelines, writing complex queries, and building analytical workflows.</p>
-        <div class="tags"><span class="tag">Python</span><span class="tag">SQL</span><span class="tag">Pandas</span><span class="tag">NumPy</span></div>
-      </div>
-      <div class="sk t">
-        <div class="sk-icon"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg></div>
-        <div class="sk-label">Databases</div>
-        <h3>Databases & Cloud</h3>
-        <p>Designing schemas and working with relational and NoSQL databases, with cloud deployment experience on AWS.</p>
-        <div class="tags"><span class="tag">PostgreSQL</span><span class="tag">MySQL</span><span class="tag">MongoDB</span><span class="tag">AWS</span></div>
-      </div>
-      <div class="sk b">
-        <div class="sk-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="6" height="6" rx="1"/><rect x="15" y="3" width="6" height="6" rx="1"/><rect x="15" y="15" width="6" height="6" rx="1"/><path d="M6 9v3a3 3 0 0 0 3 3h6"/><path d="M18 12v3"/></svg></div>
-        <div class="sk-label">Backend</div>
-        <h3>APIs & Pipelines</h3>
-        <p>Building REST APIs and end-to-end data pipelines including video processing and LLM-integrated automation workflows.</p>
-        <div class="tags"><span class="tag">Flask</span><span class="tag">FastAPI</span><span class="tag">FFmpeg</span><span class="tag">ETL</span></div>
-      </div>
-      <div class="sk a">
-        <div class="sk-icon"><svg viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
-        <div class="sk-label">Other</div>
-        <h3>Languages & Tools</h3>
-        <p>Additional programming languages and dev tools used across academic and internship projects.</p>
-        <div class="tags"><span class="tag">C++</span><span class="tag">Java</span><span class="tag">Git</span><span class="tag">Node.js</span></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="internships">
-  <div class="wrap">
-    <div class="s-label">My Experience</div>
-    <h2 class="s-title">Featured <span>Internships</span></h2>
-    
-    <div class="projects-list">
-      <div class="proj" data-project="Full-Stack Web Developer Intern – Anna University">
-        <div class="proj-num">01</div>
-        <div class="proj-body">
-          <h3>Full-Stack Web Developer Intern</h3>
-          <p><strong>Centre for Distance Education, Anna University</strong><br/>Built and deployed a scalable cloud-based learning platform supporting 87 courses across 13 centres with secure online payments.</p>
-          <div class="proj-tags"><span class="proj-tag">PHP</span><span class="proj-tag">PostgreSQL</span><span class="proj-tag">AWS</span></div>
+      <!-- ABOUT HEADER: Photo + Intro (Top Half) -->
+      <div class="about-hero">
+        <div class="about-photo">
+          <img src="uploads/KesavKumarj_Image.jpg" alt="Kesav Kumar">
         </div>
-        <div class="proj-icon">
-          <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
-        </div>
-      </div>
-
-      <div class="proj" data-project="Full-Stack Web Developer Intern – Aravind Eye Hospital">
-        <div class="proj-num">02</div>
-        <div class="proj-body">
-          <h3>Full-Stack Web Developer Intern</h3>
-          <p><strong>AUROiTech, Aravind Eye Hospital</strong><br/>Developed a geospatial API to identify nearby eye vision centres using real-time location data and distance-based filtering.</p>
-          <div class="proj-tags"><span class="proj-tag">ASP.NET Core</span><span class="proj-tag">PostgreSQL</span><span class="proj-tag">APIs</span></div>
-        </div>
-        <div class="proj-icon">
-          <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<section id="projects">
-  <div class="wrap">
-    <div class="s-label">My work</div>
-    <h2 class="s-title">Featured <span>Projects</span></h2>
-
-    <div class="projects-list">
-      <div class="proj" data-project="K-RAID: Agentic Kabaddi Reasoning Framework">
-        <div class="proj-num">01</div>
-        <div class="proj-body">
-          <h3>K-RAID: Agentic Kabaddi Reasoning Framework</h3>
-          <p>AI-powered multi-agent framework analysing kabaddi raids via YOLOv8 detection, Bird's Eye View mapping, and agents for raid search, counterfactual strategy, and NLP tactical insights.</p>
-          <div class="proj-tags"><span class="proj-tag">YOLOv8</span><span class="proj-tag">Python</span><span class="proj-tag">Multi-Agent</span><span class="proj-tag">Computer Vision</span><span class="proj-tag">NLP</span></div>
-        </div>
-        <div class="proj-icon">
-          <svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg>
-        </div>
-      </div>
-      <div class="proj" data-project="AI-Based Football Injury Detection">
-        <div class="proj-num">02</div>
-        <div class="proj-body">
-          <h3>AI-Based Football Injury Detection</h3>
-          <p>A computer vision pipeline that detects player collisions, tracks identities across frames, extracts pose keypoints, and predicts injury risks using temporal LSTM models.</p>
-          <div class="proj-tags"><span class="proj-tag">Python</span><span class="proj-tag">Computer Vision</span><span class="proj-tag">LSTM</span><span class="proj-tag">Pose Estimation</span></div>
-        </div>
-        <div class="proj-icon">
-          <svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg>
-        </div>
-      </div>
-      <div class="proj" data-project="Automated Video Data Wrangling Pipeline">
-        <div class="proj-num">03</div>
-        <div class="proj-body">
-          <h3>Automated Video Data Wrangling Pipeline</h3>
-          <p>An end-to-end pipeline that segments videos, transcribes speech, and performs LLM-based speaker diarization — complete with a UI for orchestration and annotation.</p>
-          <div class="proj-tags"><span class="proj-tag">Python</span><span class="proj-tag">Flask</span><span class="proj-tag">FFmpeg</span><span class="proj-tag">LLMs</span><span class="proj-tag">ETL</span></div>
-        </div>
-        <div class="proj-icon">
-          <svg viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
-        </div>
-      </div>
-    </div>
-
-    <div class="projects-grid" style="margin-top: 3.5rem;">
-      
-      <div class="pcard blue" data-project="ChatGPT Response Analyser">
-        <div class="pcard-header">
-          <div class="pcard-icon blue">
-            <svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg>
+        <div class="about-intro">
+          <div class="intro-label">Associate Technical Consultant</div>
+          <h1>Kesav Kumar J</h1>
+          <p class="intro-subtitle">
+            B.Tech IT, Anna University CEG (CGPA: 8.12/10).
+          </p>
+          <p class="about-bio-text">
+            Strong foundation in SQL and database management with expertise in Python and backend development.
+            Experienced in designing and optimizing databases using PostgreSQL and MySQL for data-driven applications.
+            Focused on efficient data handling, query optimization, and developing scalable systems for enterprise environments.
+          </p>
+          <div class="intro-highlights">
+            <div class="highlight">
+              <div class="highlight-num">2</div>
+              <div class="highlight-label">Internships</div>
+            </div>
+            <div class="highlight">
+              <div class="highlight-num">10+</div>
+              <div class="highlight-label">Projects</div>
+            </div>
+            <div class="highlight">
+              <div class="highlight-num">2026</div>
+              <div class="highlight-label">Graduate</div>
+            </div>
           </div>
-          <div class="pcard-title">ChatGPT Response Analyser</div>
         </div>
-        <div class="pcard-desc">NLP analytics system that clusters and performs sentiment analysis on AI-generated responses.</div>
-        <div class="pcard-tags"><span class="ptag blue">Python</span><span class="ptag blue">NLP</span><span class="ptag blue">ML</span><span class="ptag blue">Flask</span></div>
       </div>
 
-      <div class="pcard teal" data-project="SQL Quiz + Query Executor">
-        <div class="pcard-header">
-          <div class="pcard-icon teal">
-            <svg viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
-          </div>
-          <div class="pcard-title">SQL Quiz + Query Executor</div>
-        </div>
-        <div class="pcard-desc">SQL contest platform with quiz mode, live query execution, visible and hidden test cases, admin controls, live proctoring, and AWS deployment.</div>
-        <div class="pcard-tags"><span class="ptag teal">SQL</span><span class="ptag teal">PostgreSQL</span><span class="ptag teal">AWS</span></div>
-      </div>
+      <!-- SKILLS GRID (Bottom Half) -->
+      <div class="about-skills">
+        <h2 class="section-title">Skills & Expertise</h2>
+        <div class="skills-grid">
 
-      <div class="pcard amber" data-project="CivicConnect">
-        <div class="pcard-header">
-          <div class="pcard-icon amber">
-            <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          <div class="skill-card blue">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <h3>Languages</h3>
+            <p>Python, SQL, C++, Java</p>
+            <div class="skill-tags">
+              <span>Python</span>
+              <span>SQL</span>
+              <span>Pandas</span>
+              <span>NumPy</span>
+            </div>
           </div>
-          <div class="pcard-title">CivicConnect</div>
-        </div>
-        <div class="pcard-desc">Citizen–government engagement platform with complaint tracking, digital voting, and an AI-powered virtual assistant across web and mobile.</div>
-        <div class="pcard-tags"><span class="ptag amber">Node.js</span><span class="ptag amber">ReactJS</span><span class="ptag amber">React Native</span><span class="ptag amber">Python</span></div>
-      </div>
 
-      <div class="pcard amber" data-project="Scalable Chess Platform">
-        <div class="pcard-header">
-          <div class="pcard-icon amber">
-            <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          <div class="skill-card teal">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+            </div>
+            <h3>Databases & Cloud</h3>
+            <p>PostgreSQL, MySQL, MongoDB, AWS</p>
+            <div class="skill-tags">
+              <span>PostgreSQL</span>
+              <span>MongoDB</span>
+              <span>AWS</span>
+            </div>
           </div>
-          <div class="pcard-title">Scalable Chess Platform</div>
-        </div>
-        <div class="pcard-desc">Offline chess platform with 1v1 and AI modes, MongoDB sharding for player data, match history, and puzzle analytics.</div>
-        <div class="pcard-tags"><span class="ptag amber">Node.js</span><span class="ptag amber">MongoDB</span><span class="ptag amber">HTML</span></div>
-      </div>
 
-      <div class="pcard rose" data-project="CampusVoice">
-        <div class="pcard-header">
-          <div class="pcard-icon rose">
-            <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          <div class="skill-card blue">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24"><rect x="3" y="3" width="6" height="6" rx="1"/><rect x="15" y="3" width="6" height="6" rx="1"/><rect x="15" y="15" width="6" height="6" rx="1"/><path d="M6 9v3a3 3 0 0 0 3 3h6"/><path d="M18 12v3"/></svg>
+            </div>
+            <h3>Backend & Pipelines</h3>
+            <p>Flask, FastAPI, ETL, FFmpeg</p>
+            <div class="skill-tags">
+              <span>Flask</span>
+              <span>FastAPI</span>
+              <span>ETL</span>
+            </div>
           </div>
-          <div class="pcard-title">CampusVoice</div>
+
+          <div class="skill-card amber">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+            </div>
+            <h3>AI & Computer Vision</h3>
+            <p>YOLOv8, Tracking, LLM Integration</p>
+            <div class="skill-tags">
+              <span>YOLOv8</span>
+              <span>CV</span>
+              <span>LLMs</span>
+            </div>
+          </div>
+
         </div>
-        <div class="pcard-desc">Secure campus election platform with Face ID authentication, encrypted voting, cryptographically verifiable receipts, and an SOS safety module.</div>
-        <div class="pcard-tags"><span class="ptag rose">Node.js</span><span class="ptag rose">Supabase</span><span class="ptag rose">Face API</span><span class="ptag rose">Cryptography</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ════════════════════════════════════════════════════════ -->
+  <!-- TAB 2: PROJECTS & INTERNSHIPS -->
+  <!-- ════════════════════════════════════════════════════════ -->
+  <div class="tab-content" id="projects-tab">
+    <div class="tab-inner">
+
+      <!-- FEATURED PROJECTS -->
+      <section class="projects-section">
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-desc">GGTP Program & Enterprise Data Engineering</p>
+
+        <div class="featured-projects">
+
+          <div class="featured-project">
+            <div class="fp-number">01</div>
+            <div class="fp-content">
+              <h3>BFSI Data Pipeline (Python)</h3>
+              <p class="fp-desc">Enterprise-scale Python data pipeline for banking, financial services, and insurance domain. Includes data processing, validation, testing with pytest, and complex data structure handling.</p>
+              <div class="fp-tags">
+                <span>Python</span>
+                <span>Pandas</span>
+                <span>Testing</span>
+                <span>Data Eng</span>
+              </div>
+              <a href="https://github.com/Perficient-Academy/GGTP-IND-26-06-DP-FUN-410916/tree/main/Python/BFSI_Python_Project" target="_blank" class="fp-link">View on GitHub →</a>
+            </div>
+            <div class="fp-icon">
+              <svg viewBox="0 0 24 24"><rect x="3" y="3" width="6" height="6" rx="1"/><rect x="15" y="3" width="6" height="6" rx="1"/><rect x="15" y="15" width="6" height="6" rx="1"/><path d="M6 9v3a3 3 0 0 0 3 3h6"/><path d="M18 12v3"/></svg>
+            </div>
+          </div>
+
+          <div class="featured-project">
+            <div class="fp-number">02</div>
+            <div class="fp-content">
+              <h3>BFSI Database & SQL</h3>
+              <p class="fp-desc">Database design and SQL optimization for banking workflows. Schema design, complex queries, and PostgreSQL implementation for financial data systems.</p>
+              <div class="fp-tags">
+                <span>SQL</span>
+                <span>PostgreSQL</span>
+                <span>Schema Design</span>
+                <span>Database</span>
+              </div>
+              <a href="https://github.com/Perficient-Academy/GGTP-IND-26-06-DP-FUN-410916/tree/main/SQL/BFSI_SQL_Project" target="_blank" class="fp-link">View on GitHub →</a>
+            </div>
+            <div class="fp-icon">
+              <svg viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+            </div>
+          </div>
+
+          <div class="featured-project" data-project="streamlit">
+            <div class="fp-number">03</div>
+            <div class="fp-content">
+              <h3>Scientific Calculator (Streamlit)</h3>
+              <p class="fp-desc">Interactive GUI application built with Streamlit for scientific calculations. User-friendly interface with support for advanced mathematical operations and visualizations.</p>
+              <div class="fp-tags">
+                <span>Streamlit</span>
+                <span>Python</span>
+                <span>UI/UX</span>
+              </div>
+              <div class="fp-links">
+                <a href="#" class="fp-gallery-link">View Images & Details →</a>
+                <a href="https://github.com/Perficient-Academy/GGTP-IND-26-06-DP-FUN-410916/tree/main/Scientific_Calculator" target="_blank" class="fp-link">View on GitHub →</a>
+              </div>
+            </div>
+            <div class="fp-icon">
+              <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- OTHER PROJECTS GRID -->
+      <section class="projects-section other-projects">
+        <h2 class="section-title">Other Notable Projects</h2>
+        <p class="section-desc">AI, CV, and full-stack development work</p>
+
+        <div class="projects-grid">
+
+          <!-- PROJECTS WITH IMAGES -->
+          <div class="pcard blue" data-project="k-raid">
+            <div class="pcard-header">
+              <div class="pcard-icon blue">
+                <svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg>
+              </div>
+              <div class="pcard-title">K-RAID: Agentic Kabaddi Reasoning</div>
+            </div>
+            <div class="pcard-desc">AI-powered multi-agent framework analysing kabaddi raids via YOLOv8 detection, Bird's Eye View mapping, and NLP tactical insights.</div>
+            <div class="pcard-tags"><span class="ptag blue">YOLOv8</span><span class="ptag blue">Python</span><span class="ptag blue">Multi-Agent</span><span class="ptag blue">Computer Vision</span><span class="ptag blue">NLP</span></div>
+            <a href="#" class="pcard-link">View Images & Details →</a>
+          </div>
+
+          <div class="pcard teal" data-project="football-injury">
+            <div class="pcard-header">
+              <div class="pcard-icon teal">
+                <svg viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+              </div>
+              <div class="pcard-title">AI-Based Football Injury Detection</div>
+            </div>
+            <div class="pcard-desc">Computer vision pipeline for player collision detection, identity tracking, pose keypoint extraction, and injury risk prediction using LSTM.</div>
+            <div class="pcard-tags"><span class="ptag teal">Python</span><span class="ptag teal">Computer Vision</span><span class="ptag teal">LSTM</span><span class="ptag teal">Pose Estimation</span></div>
+            <a href="#" class="pcard-link">View Images & Details →</a>
+          </div>
+
+          <div class="pcard amber" data-project="civicconnect">
+            <div class="pcard-header">
+              <div class="pcard-icon amber">
+                <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+              </div>
+              <div class="pcard-title">CivicConnect</div>
+            </div>
+            <div class="pcard-desc">Citizen-government engagement platform with complaint tracking, digital voting, and an AI-powered virtual assistant across web and mobile.</div>
+            <div class="pcard-tags"><span class="ptag amber">Node.js</span><span class="ptag amber">ReactJS</span><span class="ptag amber">React Native</span><span class="ptag amber">Python</span></div>
+            <a href="#" class="pcard-link">View Images & Details →</a>
+          </div>
+
+          <div class="pcard purple" data-project="chess-platform">
+            <div class="pcard-header">
+              <div class="pcard-icon purple">
+                <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+              </div>
+              <div class="pcard-title">Scalable Chess Platform</div>
+            </div>
+            <div class="pcard-desc">Offline chess platform with 1v1 and AI modes, MongoDB sharding for player data, match history, and puzzle analytics.</div>
+            <div class="pcard-tags"><span class="ptag purple">Node.js</span><span class="ptag purple">MongoDB</span><span class="ptag purple">HTML</span></div>
+            <a href="#" class="pcard-link">View Images & Details →</a>
+          </div>
+
+          <div class="pcard rose" data-project="campusvoice">
+            <div class="pcard-header">
+              <div class="pcard-icon rose">
+                <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </div>
+              <div class="pcard-title">CampusVoice</div>
+            </div>
+            <div class="pcard-desc">Secure campus election platform with Face ID authentication, encrypted voting, cryptographically verifiable receipts, and SOS safety module.</div>
+            <div class="pcard-tags"><span class="ptag rose">Node.js</span><span class="ptag rose">Supabase</span><span class="ptag rose">Face API</span><span class="ptag rose">Cryptography</span></div>
+            <a href="#" class="pcard-link">View Images & Details →</a>
+          </div>
+
+          <!-- PROJECTS WITHOUT IMAGES -->
+          <div class="pcard blue" data-project="video-pipeline">
+            <div class="pcard-header">
+              <div class="pcard-icon blue">
+                <svg viewBox="0 0 24 24"><rect x="3" y="3" width="6" height="6" rx="1"/><rect x="15" y="3" width="6" height="6" rx="1"/><rect x="15" y="15" width="6" height="6" rx="1"/><path d="M6 9v3a3 3 0 0 0 3 3h6"/><path d="M18 12v3"/></svg>
+              </div>
+              <div class="pcard-title">Automated Video Data Wrangling</div>
+            </div>
+            <div class="pcard-desc">End-to-end pipeline for video segmentation, speech transcription, and LLM-based speaker diarization with UI for orchestration.</div>
+            <div class="pcard-tags"><span class="ptag blue">Python</span><span class="ptag blue">Flask</span><span class="ptag blue">FFmpeg</span><span class="ptag blue">LLMs</span><span class="ptag blue">ETL</span></div>
+            <a href="#" class="pcard-link">View Images & Details →</a>
+          </div>
+
+          <div class="pcard amber" data-project="chatgpt-analyser">
+            <div class="pcard-header">
+              <div class="pcard-icon amber">
+                <svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg>
+              </div>
+              <div class="pcard-title">ChatGPT Response Analyser</div>
+            </div>
+            <div class="pcard-desc">NLP analytics system that clusters and performs sentiment analysis on AI-generated responses.</div>
+            <div class="pcard-tags"><span class="ptag amber">Python</span><span class="ptag amber">NLP</span><span class="ptag amber">ML</span><span class="ptag amber">Flask</span></div>
+            <a href="#" class="pcard-link">View Images & Details →</a>
+          </div>
+
+          <div class="pcard teal" data-project="sql-quiz">
+            <div class="pcard-header">
+              <div class="pcard-icon teal">
+                <svg viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+              </div>
+              <div class="pcard-title">SQL Quiz + Query Executor</div>
+            </div>
+            <div class="pcard-desc">SQL contest platform with quiz mode, live query execution, visible and hidden test cases, admin controls, and AWS deployment.</div>
+            <div class="pcard-tags"><span class="ptag teal">SQL</span><span class="ptag teal">PostgreSQL</span><span class="ptag teal">AWS</span></div>
+            <a href="#" class="pcard-link">View Images & Details →</a>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- FEATURED INTERNSHIPS -->
+      <section class="projects-section">
+        <h2 class="section-title">Featured Internships</h2>
+        <p class="section-desc">Professional experience at leading organizations</p>
+
+        <div class="featured-projects">
+
+          <div class="featured-project" data-project="anna-university-intern">
+            <div class="fp-number">01</div>
+            <div class="fp-content">
+              <h3>Full-Stack Web Developer Intern</h3>
+              <p class="fp-org">Centre for Distance Education, Anna University</p>
+              <p class="fp-desc">Built and deployed a scalable cloud-based learning platform supporting 87 courses across 13 centres with secure online payments integration.</p>
+              <div class="fp-tags">
+                <span>PHP</span>
+                <span>PostgreSQL</span>
+                <span>AWS</span>
+              </div>
+              <a href="#" class="fp-gallery-link">View Images & Details →</a>
+            </div>
+            <div class="fp-icon">
+              <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            </div>
+          </div>
+
+          <div class="featured-project" data-project="aravind-eye-hospital">
+            <div class="fp-number">02</div>
+            <div class="fp-content">
+              <h3>Full-Stack Web Developer Intern</h3>
+              <p class="fp-org">AUROiTech, Aravind Eye Hospital</p>
+              <p class="fp-desc">Developed a geospatial API to identify nearby eye vision centres using real-time location data and distance-based filtering algorithms.</p>
+              <div class="fp-tags">
+                <span>ASP.NET Core</span>
+                <span>PostgreSQL</span>
+                <span>APIs</span>
+              </div>
+              <a href="#" class="fp-gallery-link">View Images & Details →</a>
+            </div>
+            <div class="fp-icon">
+              <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+  <!-- ════════════════════════════════════════════════════════ -->
+  <!-- TAB 3: CONTACT -->
+  <!-- ════════════════════════════════════════════════════════ -->
+  <div class="tab-content" id="contact-tab">
+    <div class="tab-inner">
+
+      <div class="contact-section">
+        <h2 class="section-title">Professional Contact</h2>
+        <p class="section-desc">Reach out for collaborations and opportunities</p>
+
+        <div class="contact-grid">
+
+          <div class="contact-card">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+            </div>
+            <h3>LinkedIn</h3>
+            <p>kesav-kumar-jothichandran-b55787413</p>
+            <a href="www.linkedin.com/in/kesav-kumar-jothichandran-b55787413" target="_blank" class="contact-link">Connect →</a>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+            </div>
+            <h3>GitHub</h3>
+            <p>@kesav-kumarj_prft</p>
+            <a href="https://github.com/kesav-kumarj_prft" target="_blank" class="contact-link">View Repository →</a>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            </div>
+            <h3>Professional Email</h3>
+            <p>kesav.kumarj@perficient.com</p>
+            <a href="mailto:kesav.kumarj@perficient.com" class="contact-link">Send Message →</a>
+          </div>
+
+        </div>
+
       </div>
 
     </div>
   </div>
-</section>
 
-<section id="contact">
-  <div class="s-label">Let's talk</div>
-  <h2 class="s-title">Get In <span>Touch</span></h2>
-  <p class="contact-sub">Passionate about data and AI systems. Open to opportunities — drop me a message and I'll respond fast.</p>
-  <div class="contact-row">
-    <a href="mailto:kesav25155@gmail.com" class="clink">
-      <span class="clink-icon"><svg viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></span>
-      <div><span class="clink-type">Email</span><span class="clink-val">kesav25155@gmail.com</span></div>
-    </a>
-    <a href="https://linkedin.com/in/kesavkumarj" target="_blank" class="clink">
-      <span class="clink-icon"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg></span>
-      <div><span class="clink-type">LinkedIn</span><span class="clink-val">linkedin.com/in/kesavkumarj</span></div>
-    </a>
-    <a href="https://github.com/kesav25155" target="_blank" class="clink">
-      <span class="clink-icon"><svg viewBox="0 0 24 24"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg></span>
-      <div><span class="clink-type">GitHub</span><span class="clink-val">github.com/kesav25155</span></div>
-    </a>
+  <!-- ════════════════════════════════════════════════════════ -->
+  <!-- TAB 4: PERFICIENT EXPERIENCE -->
+  <!-- ════════════════════════════════════════════════════════ -->
+  <div class="tab-content" id="perficient-tab">
+    <div class="tab-inner">
+
+      <div class="perficient-intro">
+        <h2 class="section-title">Four Weeks at Perficient</h2>
+        <p class="section-desc">Self-reflection on growth, learning, and experiences</p>
+      </div>
+
+      <div class="perficient-grid">
+
+        <!-- STRENGTHS GAINED -->
+        <div class="perficient-card strengths">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <h3>Strengths Gained</h3>
+          <ul class="perficient-list">
+            <li>Hands-on experience with enterprise-scale Python data pipelines</li>
+            <li>Understanding of BFSI domain and banking data workflows</li>
+            <li>Debugging & testing skills with pytest and complex data structures</li>
+            <li>Git workflow and collaborative development practices</li>
+            <li>Code review and professional communication standards</li>
+          </ul>
+        </div>
+
+        <!-- AREAS TO STRENGTHEN -->
+        <div class="perficient-card areas">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg>
+          </div>
+          <h3>Areas to Strengthen</h3>
+          <ul class="perficient-list">
+            <li>Working with distributed systems and scalability patterns</li>
+            <li>Performance optimization and profiling techniques</li>
+            <li>More hands-on experience with modern data stack tools</li>
+          </ul>
+        </div>
+
+        <!-- SHOUT OUTS -->
+        <div class="perficient-card shoutouts">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3>Shout Outs</h3>
+          <div class="shoutout-text">
+            <p>
+              Special thanks to the team at Perficient Academy for creating a supportive learning environment.
+              The mentorship, feedback, and collaborative spirit made this an invaluable experience.
+            </p>
+            <p>
+              Thanks to all team members who shared knowledge, reviewed code, and helped troubleshoot challenges throughout the program.
+            </p>
+          </div>
+        </div>
+
+        <!-- GROUP PHOTO / TEAM -->
+        <div class="perficient-card team-photo">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+          </div>
+          <h3>Team & Memory</h3>
+          <div class="photo-placeholder">
+            <img src="uploads/Media.jpg" alt="Team Photo">
+          </div>
+        </div>
+
+      </div>
+
+    </div>
   </div>
-</section>
 
-<footer>
-  <span class="ft">© 2026 · Associate Technical Consultant · Perficient</span>
+</div>
+
+<!-- ── FOOTER ── -->
+<footer class="footer">
+  <div class="footer-content">
+    <p>&copy; 2026 Kesav Kumar Jothichandran. All rights reserved.</p>
+  </div>
 </footer>
-<!-- ── GALLERY OVERLAY ── -->
-<div class="gallery-overlay" id="galleryOverlay">
-  <div class="gallery-modal">
-    <div class="gm-header">
-      <div class="gm-header-left">
-        <div class="gm-label">Project Gallery</div>
-        <div class="gm-title" id="gmTitle">Project Name</div>
-      </div>
-      <button class="gm-close" id="gmClose">
-        <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-      </button>
-    </div>
 
-    <div class="gm-upload-bar" style="display:none">
-      <button class="gm-upload-btn" id="gmUploadBtn">
-        <svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
-        Upload Images
-      </button>
-      <span class="gm-upload-hint">Images are loaded from the <code>uploads/</code> folder in the repo</span>
-    </div>
-
-    <div class="gm-body">
-      <div class="gm-grid" id="gmGrid">
-        <div class="gm-empty" id="gmEmpty">
-          <div class="gm-empty-icon">
-            <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
-          </div>
-          <p><strong>No images yet.</strong><br/>Click "Upload Images" to add screenshots or photos for this project.</p>
+<!-- ── SIMPLE IMAGE MODAL ── -->
+<div id="imageModal" class="image-modal">
+  <div class="modal-content">
+    <button class="modal-close" id="modalClose">&times;</button>
+    <h2 id="modalTitle" class="modal-title">Project Gallery</h2>
+    <div class="modal-body">
+      <div class="image-container">
+        <img id="mainImage" src="" alt="Gallery Image" style="display:none;">
+        <div id="emptyMessage" class="empty-message">
+          <svg viewBox="0 0 24 24" width="48" height="48"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          <p>Gallery images coming soon for this project</p>
         </div>
+      </div>
+      <div class="nav-buttons" style="display:none;" id="navButtons">
+        <button class="nav-btn prev" id="prevBtn">← Previous</button>
+        <span class="image-counter" id="imageCounter"></span>
+        <button class="nav-btn next" id="nextBtn">Next →</button>
       </div>
     </div>
   </div>
 </div>
 
-<!-- ── LIGHTBOX ── -->
-<div class="lightbox" id="lightbox">
-  <button class="lightbox-close" id="lbClose">
-    <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-  </button>
-  <button class="lightbox-nav lightbox-prev" id="lbPrev">
-    <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
-  </button>
-  <img id="lbImg" src="" alt=""/>
-  <button class="lightbox-nav lightbox-next" id="lbNext">
-    <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
-  </button>
-  <div class="lightbox-counter" id="lbCounter"></div>
-</div>
-
+<script src="script.js"></script>
 <script>
-(function(){
-  /*
-   * Static-file gallery for GitHub Pages.
-   *
-   * Images live at:  uploads/<slug>/<filename>
-   *
-   * The mapping below defines which files exist for each project.
-   * Add/remove filenames here whenever you commit new screenshots.
-   *
-   * Slug rules: lowercase, spaces → hyphens, drop special chars.
-   * e.g. "K-RAID: Agentic Kabaddi Reasoning Framework" → "k-raid"
-   */
   const PROJECT_IMAGES = {
-    // Featured (large) projects
-    'K-RAID: Agentic Kabaddi Reasoning Framework': [
-      // e.g. 'uploads/k-raid/screenshot1.png',
+    'k-raid': [
+      'uploads/k-raid/image1.png',
+      'uploads/k-raid/image2.png',
+      'uploads/k-raid/image3.png',
+      'uploads/k-raid/image4.png',
+      'uploads/k-raid/image5.png',
+      'uploads/k-raid/image6.png',
+      'uploads/k-raid/image7.png',
+      'uploads/k-raid/image8.png',
+      'uploads/k-raid/image9.png',
+      'uploads/k-raid/image10.png',
+      'uploads/k-raid/image11.png',
+      'uploads/k-raid/image12.png',
+      'uploads/k-raid/image13.png',
     ],
-    'AI-Based Football Injury Detection': [
-      // e.g. 'uploads/football-injury/demo.jpg',
+    'football-injury': [
+      'uploads/football-injury/image1.png',
+      'uploads/football-injury/image2.png',
+      'uploads/football-injury/image3.png',
+      'uploads/football-injury/image4.png',
     ],
-    'Automated Video Data Wrangling Pipeline': [
-      // e.g. 'uploads/video-pipeline/ui.png',
+    'civicconnect': [
+      'uploads/civicconnect/image1.jpeg',
+      'uploads/civicconnect/image2.jpeg',
+      'uploads/civicconnect/image3.jpeg',
+      'uploads/civicconnect/image4.jpeg',
+      'uploads/civicconnect/image5.jpeg',
+      'uploads/civicconnect/image6.jpeg',
+      'uploads/civicconnect/image7.jpeg',
+      'uploads/civicconnect/image8.jpeg',
     ],
-    // Internships
-    'Full-Stack Web Developer Intern – Anna University': [
-      // e.g. 'uploads/anna-university/platform.png',
+    'chess-platform': [
+      'uploads/chess-platform/image1.jpeg',
+      'uploads/chess-platform/image2.jpeg',
+      'uploads/chess-platform/image3.jpeg',
+      'uploads/chess-platform/image4.jpeg',
     ],
-    'Full-Stack Web Developer Intern – Aravind Eye Hospital': [
-      // e.g. 'uploads/aravind/geospatial.png',
+    'campusvoice': [
+      'uploads/campusvoice/image1.png',
+      'uploads/campusvoice/image2.png',
+      'uploads/campusvoice/image3.png',
+      'uploads/campusvoice/image4.png',
+      'uploads/campusvoice/image5.png',
+      'uploads/campusvoice/image6.png',
+      'uploads/campusvoice/image7.png',
+      'uploads/campusvoice/image8.png',
     ],
-    // Card projects
-    'ChatGPT Response Analyser': [],
-    'SQL Quiz + Query Executor': [],
-    'CivicConnect': [],
-    'Scalable Chess Platform': [],
-    'CampusVoice': [],
+    'anna-university-intern': [
+      'uploads/anna-university-intern/image1.png',
+      'uploads/anna-university-intern/image2.png',
+      'uploads/anna-university-intern/image3.png',
+      'uploads/anna-university-intern/image4.png',
+      'uploads/anna-university-intern/image5.png',
+      'uploads/anna-university-intern/image6.png',
+      'uploads/anna-university-intern/image7.png',
+      'uploads/anna-university-intern/image8.png',
+      'uploads/anna-university-intern/image9.png',
+    ],
+    'aravind-eye-hospital': [],
+    'video-pipeline': [],
+    'chatgpt-analyser': [],
+    'sql-quiz': [],
+    'streamlit': [
+      'uploads/streamlit/Screenshot 2026-06-25 234054.png',
+      'uploads/streamlit/Screenshot 2026-06-25 234229.png',
+    ],
   };
 
   let currentImages = [];
-  let lbIndex = 0;
+  let currentIndex = 0;
+  let currentProject = '';
 
-  // ── DOM refs ──────────────────────────────────────
-  const overlay   = document.getElementById('galleryOverlay');
-  const gmTitle   = document.getElementById('gmTitle');
-  const gmGrid    = document.getElementById('gmGrid');
-  const gmEmpty   = document.getElementById('gmEmpty');
-  const gmClose   = document.getElementById('gmClose');
-  const lightbox  = document.getElementById('lightbox');
-  const lbImg     = document.getElementById('lbImg');
-  const lbClose   = document.getElementById('lbClose');
-  const lbPrev    = document.getElementById('lbPrev');
-  const lbNext    = document.getElementById('lbNext');
-  const lbCounter = document.getElementById('lbCounter');
+  const modal = document.getElementById('imageModal');
+  const modalTitle = document.getElementById('modalTitle');
+  const mainImage = document.getElementById('mainImage');
+  const emptyMessage = document.getElementById('emptyMessage');
+  const navButtons = document.getElementById('navButtons');
+  const imageCounter = document.getElementById('imageCounter');
+  const prevBtn = document.getElementById('prevBtn');
+  const nextBtn = document.getElementById('nextBtn');
+  const closeBtn = document.getElementById('modalClose');
 
-  // ── Open gallery ──────────────────────────────────
   function openGallery(projectName) {
-    gmTitle.textContent = projectName;
+    currentProject = projectName;
     currentImages = PROJECT_IMAGES[projectName] || [];
-    renderGrid();
-    overlay.classList.add('open');
+    currentIndex = 0;
+
+    console.log(`Opening gallery for ${projectName}, images:`, currentImages);
+
+    modalTitle.textContent = projectName;
+    modal.classList.add('active');
     document.body.style.overflow = 'hidden';
+
+    if (currentImages.length > 0) {
+      mainImage.style.display = 'block';
+      emptyMessage.style.display = 'none';
+      navButtons.style.display = 'flex';
+      showImage(0);
+    } else {
+      mainImage.style.display = 'none';
+      emptyMessage.style.display = 'block';
+      navButtons.style.display = 'none';
+    }
   }
 
   function closeGallery() {
-    overlay.classList.remove('open');
+    modal.classList.remove('active');
     document.body.style.overflow = '';
   }
 
-  // ── Render grid ───────────────────────────────────
-  function renderGrid() {
-    Array.from(gmGrid.querySelectorAll('.gm-thumb')).forEach(n => n.remove());
-    gmEmpty.style.display = currentImages.length ? 'none' : '';
-
-    currentImages.forEach((src, idx) => {
-      const wrap = document.createElement('div');
-      wrap.className = 'gm-thumb';
-
-      const img = document.createElement('img');
-      img.src = src;
-      img.alt = `Image ${idx + 1}`;
-      img.addEventListener('click', () => openLightbox(idx));
-
-      wrap.appendChild(img);
-      gmGrid.appendChild(wrap);
-    });
+  function showImage(index) {
+    if (currentImages.length === 0) return;
+    currentIndex = (index + currentImages.length) % currentImages.length;
+    const imagePath = currentImages[currentIndex];
+    mainImage.src = imagePath;
+    mainImage.onerror = () => {
+      console.error('Failed to load image:', imagePath);
+      mainImage.src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="400" height="300"%3E%3Crect fill="%23f0f0f0" width="400" height="300"/%3E%3Ctext x="50%25" y="50%25" font-family="Arial" font-size="20" fill="%23999" text-anchor="middle" dy=".3em"%3EImage failed to load%3C/text%3E%3C/svg%3E';
+    };
+    imageCounter.textContent = `${currentIndex + 1} / ${currentImages.length}`;
   }
 
-  // ── Lightbox ──────────────────────────────────────
-  function openLightbox(idx) {
-    lbIndex = idx;
-    lbImg.src = currentImages[idx];
-    lbCounter.textContent = `${idx + 1} / ${currentImages.length}`;
-    lightbox.classList.add('open');
-  }
-  function closeLightbox() { lightbox.classList.remove('open'); }
-  function lbStep(dir) {
-    lbIndex = (lbIndex + dir + currentImages.length) % currentImages.length;
-    lbImg.src = currentImages[lbIndex];
-    lbCounter.textContent = `${lbIndex + 1} / ${currentImages.length}`;
-  }
+  prevBtn.addEventListener('click', () => showImage(currentIndex - 1));
+  nextBtn.addEventListener('click', () => showImage(currentIndex + 1));
+  closeBtn.addEventListener('click', closeGallery);
 
-  lbClose.addEventListener('click', closeLightbox);
-  lbPrev.addEventListener('click', () => lbStep(-1));
-  lbNext.addEventListener('click', () => lbStep(1));
-  lightbox.addEventListener('click', e => { if (e.target === lightbox) closeLightbox(); });
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) closeGallery();
+  });
 
-  // ── Keyboard ──────────────────────────────────────
-  document.addEventListener('keydown', e => {
-    if (lightbox.classList.contains('open')) {
-      if (e.key === 'ArrowLeft')  lbStep(-1);
-      if (e.key === 'ArrowRight') lbStep(1);
-      if (e.key === 'Escape')     closeLightbox();
-    } else if (overlay.classList.contains('open')) {
+  document.addEventListener('keydown', (e) => {
+    if (modal.classList.contains('active')) {
       if (e.key === 'Escape') closeGallery();
+      if (e.key === 'ArrowLeft') showImage(currentIndex - 1);
+      if (e.key === 'ArrowRight') showImage(currentIndex + 1);
     }
   });
 
-  // ── Close button & backdrop ────────────────────────
-  gmClose.addEventListener('click', closeGallery);
-  overlay.addEventListener('click', e => { if (e.target === overlay) closeGallery(); });
-
-  // ── Attach click to all project cards ─────────────
+  // Hide "View Images & Details" button for projects without images
   document.querySelectorAll('[data-project]').forEach(card => {
-    card.addEventListener('click', () => openGallery(card.dataset.project));
-  });
-})();
-</script>
+    const projectKey = card.dataset.project;
+    const images = PROJECT_IMAGES[projectKey] || [];
+    const galleryLink = card.querySelector('.pcard-link, .fp-gallery-link');
 
+    if (galleryLink && images.length === 0) {
+      galleryLink.style.display = 'none';
+    }
+  });
+
+  // Only gallery links trigger the modal
+  document.querySelectorAll('.fp-gallery-link, .pcard-link').forEach(link => {
+    link.addEventListener('click', (e) => {
+      console.log('Gallery link clicked');
+      e.preventDefault();
+      e.stopPropagation();
+      const projectName = link.closest('[data-project]')?.dataset.project;
+      if (projectName && PROJECT_IMAGES[projectName]?.length > 0) {
+        openGallery(projectName);
+      }
+    }, { once: false });
+  });
+</script>
 </body>
 </html>
